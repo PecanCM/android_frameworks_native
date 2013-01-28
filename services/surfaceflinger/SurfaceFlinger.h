@@ -436,6 +436,7 @@ private:
    // only written in the main thread, only read in other threads
    volatile     int32_t                     mSecureFrameBuffer;
                 int                         mUseDithering;
+                bool                        mPrefer16bpp;
 #if defined(BOARD_USES_SAMSUNG_HDMI) && defined(SAMSUNG_EXYNOS5250)
     SecHdmiClient *                         mHdmiClient;
 #endif
